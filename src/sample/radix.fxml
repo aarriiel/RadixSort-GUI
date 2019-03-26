@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="38.0" layoutY="31.0" text="Input" />
+      <TextField fx:id="radixArray" layoutX="91.0" layoutY="27.0" prefHeight="23.0" prefWidth="301.0" promptText="EX：13,15,14(小於100，不超過10個)" />
+      <Button fx:id="sortButton" layoutX="436.0" layoutY="27.0" mnemonicParsing="false" text="RadixSort" />
+      <Button fx:id="clear" layoutX="533.0" layoutY="27.0" mnemonicParsing="false" text="Clear" />
+      <Label layoutX="38.0" layoutY="383.0" prefHeight="15.0" prefWidth="115.0" text="Sorted array：" />
+      <TextField fx:id="sortedArray" disable="true" layoutX="163.0" layoutY="379.0" prefHeight="23.0" prefWidth="377.0" />
+      <TableView fx:id="radixView1" layoutX="38.0" layoutY="78.0" prefHeight="249.0" prefWidth="294.0">
+        <columns>
+          <TableColumn fx:id="radixViewBucket1" prefWidth="75.0" text="Bucket" />
+          <TableColumn fx:id="radixViewNumber1" prefWidth="218.0" text="Number" />
+        </columns>
+      </TableView>
+      <TableView fx:id="radixView2" layoutX="376.0" layoutY="78.0" prefHeight="249.0" prefWidth="294.0">
+        <columns>
+          <TableColumn fx:id="radixViewBucket2" prefWidth="75.0" text="Bucket" />
+          <TableColumn fx:id="radixViewNumber2" prefWidth="217.5999755859375" text="Number" />
+        </columns>
+      </TableView>
+      <Label layoutX="37.0" layoutY="334.0" text="p1:" />
+      <TextField fx:id="p1" layoutX="75.0" layoutY="330.0" prefHeight="23.0" prefWidth="255.0" />
+      <Label layoutX="376.0" layoutY="334.0" text="p2:" />
+      <TextField fx:id="p2" layoutX="414.0" layoutY="330.0" prefHeight="23.0" prefWidth="255.0" />
+   </children>
+</Pane>
